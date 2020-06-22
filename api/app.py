@@ -3,7 +3,7 @@ from getstock import stock
 
 app = Flask(__name__)
 
-@app.route('/getstock', methods=['GET'])
+@app.route('/getstock', methods=['POST'])
 def getStock():
     result = stock().get_stock()
     return result
